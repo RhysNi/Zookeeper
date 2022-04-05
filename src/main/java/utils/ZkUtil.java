@@ -3,7 +3,6 @@ package utils;
 import config.DefaultWatch;
 import org.apache.zookeeper.ZooKeeper;
 
-import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 /**
@@ -14,7 +13,8 @@ import java.util.concurrent.CountDownLatch;
 public class ZkUtil {
     private static ZooKeeper zk;
 
-    public static String ADDRESS = "120.25.253.51:2181,1.15.184.231:2181,101.133.157.40:2181/rzkConfig";
+    // public static String ADDRESS = "120.25.253.51:2181,1.15.184.231:2181,101.133.157.40:2181/rzkConfig";
+    public static String ADDRESS = "120.25.253.51:2181,1.15.184.231:2181,101.133.157.40:2181/testLock";
 
     private static CountDownLatch countDownLatch = new CountDownLatch(1);
 
